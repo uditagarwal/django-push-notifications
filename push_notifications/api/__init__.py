@@ -1,12 +1,12 @@
 from django.conf import settings
 
 if "tastypie" in settings.INSTALLED_APPS:
-	# Tastypie resources are importable from the api package level (backwards compatibility)
+    # Tastypie resources are importable from the api package level (backwards compatibility)
     from .tastypiext import APNSDeviceResource, GCMDeviceResource, APNSDeviceAuthenticatedResource, GCMDeviceAuthenticatedResource
 
-	__all__ = [
-		"APNSDeviceResource",
-		"GCMDeviceResource",
-		"APNSDeviceAuthenticatedResource",
-		"GCMDeviceAuthenticatedResource"
-	]
+    __all__ = [
+        "APNSDeviceResource",
+        "GCMDeviceResource",
+        "APNSDeviceAuthenticatedResource",
+        "GCMDeviceAuthenticatedResource"
+    ]
